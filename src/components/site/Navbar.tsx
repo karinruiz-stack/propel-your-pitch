@@ -7,8 +7,8 @@ export const Navbar = () => {
     <header className="absolute top-0 inset-x-0 z-30">
       <nav className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <span className="inline-flex h-9 items-center rounded-md bg-primary px-3">
-            <span className="font-display text-xl font-semibold tracking-tight text-primary-foreground">Propel Capital</span>
+          <span className="font-display text-2xl font-semibold tracking-tight text-white uppercase">
+            Propel <span className="text-primary">Capital</span>
           </span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-foreground/80">
