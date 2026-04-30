@@ -6,9 +6,15 @@ export const Navbar = () => {
   return (
     <header className="absolute top-0 inset-x-0 z-30">
       <nav className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-3">
-          <img src={propelLogo} alt="Propel Capital" className="h-8 w-auto" />
-        </a>
+        <div className="flex flex-col items-start gap-1">
+          <a href="#top">
+            <img src={propelLogo} alt="Propel Capital" className="h-16 md:h-20 w-auto" />
+          </a>
+          <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-[10px] uppercase tracking-wider text-foreground/60 hover:text-foreground transition-colors pl-0.5">
+            <span>Powered by</span>
+            <img src={stingLime} alt="Sting" className="h-3 w-auto" />
+          </a>
+        </div>
         <div className="hidden md:flex items-center gap-8 text-sm text-foreground/80">
           <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
           <a href="#process" className="hover:text-primary transition-colors">Process</a>
@@ -16,10 +22,6 @@ export const Navbar = () => {
           <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
         </div>
         <div className="flex items-center gap-4">
-          <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-2 text-xs text-foreground/60 hover:text-foreground transition-colors">
-            <span>Powered by</span>
-            <img src={stingLime} alt="Sting" className="h-4 w-auto" />
-          </a>
           <Button asChild variant="hero" size="sm">
             <a href="#pitch">Send pitch deck</a>
           </Button>
