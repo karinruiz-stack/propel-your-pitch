@@ -8,35 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Propel Capital — Sting brand system
+       Charcoal Green #01282d, Emerald #00554e, Mint Cream #cedfdc,
+       Light Chartreuse (Lime) #e1ff9c, Ghost White #f9f9f9,
+       Amber #ffbf04, Vivid Amber #ff9700 */
+    --background: 184 96% 9%;            /* Charcoal Green */
+    --foreground: 168 27% 84%;           /* Mint Cream */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 178 100% 17%;                /* Emerald Green */
+    --card-foreground: 168 27% 84%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 184 96% 9%;
+    --popover-foreground: 168 27% 84%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 78 100% 81%;              /* Light Chartreuse / Lime */
+    --primary-foreground: 184 96% 9%;    /* Charcoal Green text on lime */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 178 100% 17%;           /* Emerald */
+    --secondary-foreground: 168 27% 84%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 184 80% 14%;
+    --muted-foreground: 168 20% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 78 100% 81%;
+    --accent-foreground: 184 96% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 178 60% 20%;
+    --input: 178 60% 20%;
+    --ring: 78 100% 81%;
 
-    --radius: 0.5rem;
+    --amber: 44 100% 51%;
+    --amber-vivid: 35 100% 50%;
+    --mint-cream: 168 27% 84%;
+    --ghost-white: 0 0% 98%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: radial-gradient(ellipse 80% 60% at 70% 40%, hsl(178 100% 17% / 0.6), transparent 70%),
+                     radial-gradient(ellipse 60% 50% at 20% 80%, hsl(78 100% 81% / 0.08), transparent 60%);
+    --shadow-glow: 0 20px 60px -20px hsl(78 100% 81% / 0.35);
+    --shadow-card: 0 10px 40px -15px hsl(184 96% 4% / 0.6);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +114,33 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(178 60% 20% / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(178 60% 20% / 0.4) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .bg-hero { background-image: var(--gradient-hero); }
+  .marquee {
+    animation: marquee 50s linear infinite;
+  }
+  .marquee-slow {
+    animation: marquee 80s linear infinite;
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
   }
 }
