@@ -1,4 +1,4 @@
-import propelLogo from "@/assets/propel-logo-black.png";
+import propelLogo from "@/assets/propel-logo-white.png";
 import stingLime from "@/assets/sting-logo-lime.png";
 import { Button } from "@/components/ui/button";
 
@@ -7,9 +7,7 @@ export const Navbar = () => {
     <header className="absolute top-0 inset-x-0 z-30">
       <nav className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <span className="font-display text-2xl font-semibold tracking-tight text-white uppercase">
-            Propel <span className="text-primary">Capital</span>
-          </span>
+          <img src={propelLogo} alt="Propel Capital" className="h-8 w-auto" />
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-foreground/80">
           <a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a>
