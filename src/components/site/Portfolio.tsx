@@ -32,7 +32,7 @@ export const Portfolio = () => {
             </h2>
           </div>
           <p className="text-foreground/70 max-w-md">
-            From climate and deeptech to fintech, AI and consumer — a glimpse of the founders we&apos;ve been first to back.
+            From climate, health and deeptech to fintech, AI and space — a glimpse of the founders we&apos;ve been first to back.
           </p>
         </div>
 

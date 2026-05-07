@@ -43,7 +43,7 @@ export const Hero = () => {
             {[
               { n: "210+", l: "Startups backed" },
               { n: "120+", l: "Active angels" },
-              { n: "47", l: "Successful exits" },
+              { n: "60%", l: "Gets follow on investment" },
             ].map((s) => (
               <div key={s.l}>
                 <div className="font-display text-3xl md:text-4xl text-primary">{s.n}</div>
@@ -58,17 +58,17 @@ export const Hero = () => {
             <div className="absolute inset-0 rounded-full bg-primary/15 blur-3xl" />
             <div className="relative h-full w-full rounded-3xl border border-border bg-card/60 backdrop-blur-md p-8 shadow-card flex flex-col justify-between">
               <div className="flex items-center justify-between">
-                <span className="text-xs uppercase tracking-[0.2em] text-foreground/60">Propel Capital VII</span>
+                <span className="uppercase tracking-[0.2em] text-foreground/60 text-base font-normal">Propel Capital VII</span>
                 <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
               </div>
               <div>
-                <div className="font-display text-6xl text-foreground">SEK 27M</div>
-                <div className="mt-2 text-foreground/70">Committed capital, spring 2025</div>
+                <div className="font-display text-foreground text-5xl">400-600,000 SEK</div>
+                <div className="mt-2 text-foreground/70">Committed capital</div>
                 <div className="mt-6 h-px bg-border" />
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
                   <div>
-                    <div className="text-foreground/60">Cheque size</div>
-                    <div className="text-foreground font-medium mt-1">300–600k SEK</div>
+                    <div className="text-foreground/60">Committed capital</div>
+                    <div className="text-foreground font-medium mt-1">SEK 27M</div>
                   </div>
                   <div>
                     <div className="text-foreground/60">Stage</div>
@@ -80,7 +80,7 @@ export const Hero = () => {
                   </div>
                   <div>
                     <div className="text-foreground/60">Sectors</div>
-                    <div className="text-foreground font-medium mt-1">Tech, AI, Climate, Health</div>
+                    <div className="text-foreground font-medium mt-1">Climate, Health, AI, Deeptech</div>
                   </div>
                 </div>
               </div>
