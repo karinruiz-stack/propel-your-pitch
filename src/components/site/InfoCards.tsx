@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const FAQS = [
   { q: "What stage do you invest in?", a: "Pre-seed. We&apos;re typically the first institutional cheque and often the first external investors. We&apos;re often pre-revenue, sometimes pre-product but normally at least MVP or functional prototype in place with initial traction." },
-  { q: "How much do you invest?", a: "Our standard ticket is 300–600k SEK, co-invested with our angel network. Many companies later raise follow-on rounds with the same angels, leveraging our 57% follow-on rate." },
+  { q: "How much do you invest?", a: "Our standard ticket is 600 kSEK. You receive 400 kSEK upfront as a convertible note and 200 kSEK is co-invested as equity in the next round. After the upfront investment you&apos;ll get introduced to the Propel Capital VII angel investors. Many companies later raise follow-on rounds from our Propel Capital angel network, leveraging our ~60% follow-on rate. A Propel Capital investment is a great way to kick-start your startup journey." },
   { q: "What sectors do you focus on?", a: "Tech-driven solutions across software, AI, climate, fintech, health and deeptech. If your idea has the potential to scale globally from Sweden, we want to hear from you." },
   { q: "Do I have to be in the Sting program?", a: "Most Propel-backed companies go through a Sting program, but it&apos;s not a hard requirement. We evaluate every pitch on its own merit." },
   { q: "How long does the process take?", a: "From first contact to signed term sheet, typically 4–6 weeks. We give you a clear yes or no — never a slow maybe." },
