@@ -12,7 +12,7 @@ const FAQS = [
   { q: "Who are the investors in Propel Capital?", a: "Propel Capital is backed by a network of 120+ Nordic angel investors — successful founders, operators and executives — together with institutional anchors. The angels co-invest alongside the fund and often follow on in later rounds, which is a big reason behind our ~57% follow-on rate." },
   { q: "What sectors do you focus on?", a: "Tech-driven solutions across software, AI, climate, fintech, health and deeptech. If your idea has the potential to scale globally from Sweden, we want to hear from you." },
   { q: "How long does the process take?", a: "From first contact to signed investment agreement, typically 4–6 weeks. We give you a clear yes or no — never a slow maybe.<br />If you get a no, you can still apply to Sting Core or Sting Race, and if you get accepted you can get reconsidered for an investment later, when you have come a bit further and have a stronger case." },
-  { q: "Can international founders apply?", a: "We invest in companies registered in Sweden. If you&apos;re relocating, let&apos;s talk." },
+  { q: "Can international founders apply?", a: "We invest in companies registered in Sweden. If you&apos;re relocating your HQ, let&apos;s talk." },
 ];
 
 const FaqItem = ({ q, a }: { q: string; a: string }) => {
