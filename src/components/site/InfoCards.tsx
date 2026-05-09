@@ -2,7 +2,7 @@ import { Mail, Linkedin, ChevronDown, FileText } from "lucide-react";
 import { useState } from "react";
 
 const FAQS = [
-  { q: "What stage do you invest in?", a: "Pre-seed. We&apos;re typically the first institutional cheque, often pre-revenue, sometimes pre-product. We love founders who are ready to leave their jobs and go all-in." },
+  { q: "What stage do you invest in?", a: "Pre-seed. We&apos;re typically the first institutional cheque and often the first external investors. We&apos;re often pre-revenue, sometimes pre-product but normally at least MVP or functional prototype in place with initial traction." },
   { q: "How much do you invest?", a: "Our standard ticket is 300–600k SEK, co-invested with our angel network. Many companies later raise follow-on rounds with the same angels, leveraging our 57% follow-on rate." },
   { q: "What sectors do you focus on?", a: "Tech-driven solutions across software, AI, climate, fintech, health and deeptech. If your idea has the potential to scale globally from Sweden, we want to hear from you." },
   { q: "Do I have to be in the Sting program?", a: "Most Propel-backed companies go through a Sting program, but it&apos;s not a hard requirement. We evaluate every pitch on its own merit." },
