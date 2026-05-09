@@ -10,7 +10,7 @@ export const Hero = () => {
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-7">
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur px-3 py-1 text-xs text-foreground/80 mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 backdrop-blur px-3 py-1 text-foreground/80 mb-8 text-base">
             <Sparkles className="h-3.5 w-3.5 text-primary" />
             Sweden&apos;s most active angel club — by Sting since 2014
           </div>
