@@ -16,7 +16,7 @@ export const Process = () => {
           <h2 className="font-display text-4xl md:text-6xl leading-[1] text-foreground text-balance">
             From first email to first cheque in <span className="text-primary">4–6 weeks.</span>
           </h2>
-          <p className="mt-6 text-foreground/70 text-lg">
+          <p className="mt-6 text-foreground/70 text-lg max-w-2xl text-pretty">
             We respect your time. Our process is structured, transparent and moves fast — because great founders don&apos;t wait around.
           </p>
         </div>
