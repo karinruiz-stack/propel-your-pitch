@@ -29,7 +29,7 @@ export const Hero = () => {
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button asChild variant="hero" size="xl" id="pitch">
-              <a href="https://www.sting.co" target="_blank" rel="noreferrer">
+              <a href="mailto:propel@sting.co">
                 Send us your pitch deck
                 <ArrowRight className="ml-1 h-5 w-5" />
               </a>
