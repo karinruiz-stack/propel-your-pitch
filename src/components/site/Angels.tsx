@@ -1,5 +1,3 @@
-const ROLES = ["Angel investor","Serial founder","Operator","Investor","Tech veteran","Founder & angel","Strategist","Board member","Climate investor","Deeptech angel","Fintech operator","SaaS founder","Healthtech angel","Marketplace expert","Growth lead"];
-
 const MEN = [
   "Christian Said","Erik Markman","Fredrik Cardelius","Jan-Eric Ramberg","Joao Champalimaud",
   "Johan Björksten","Jonas Deibbe","Jonas Nodler","Krister Sundling","Lars Appelstål",
@@ -33,22 +31,19 @@ function interleave(men: string[], women: string[]) {
 
 const NAMES = interleave(MEN, WOMEN);
 
-const ANGELS = NAMES.map((name, i) => {
+const ANGELS = NAMES.map((name) => {
   const parts = name.split(" ");
   const initials = `${parts[0][0]}${parts[parts.length - 1][0]}`;
-  return { name, initials, role: ROLES[(i * 3) % ROLES.length] };
+  return { name, initials };
 });
 
-const AngelCard = ({ a }: { a: { name: string; initials: string; role: string } }) => (
+const AngelCard = ({ a }: { a: { name: string; initials: string } }) => (
   <div className="shrink-0 w-72 rounded-2xl border border-border bg-card/60 backdrop-blur p-6 mr-4">
     <div className="flex items-center gap-4">
       <div className="h-12 w-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center font-display text-primary text-lg">
         {a.initials}
       </div>
-      <div>
-        <div className="font-medium text-foreground">{a.name}</div>
-        <div className="text-xs text-foreground/60 mt-0.5">{a.role}</div>
-      </div>
+      <div className="font-medium text-foreground">{a.name}</div>
     </div>
   </div>
 );
