@@ -64,6 +64,7 @@ export const Hero = () => {
               <div>
                 <div className="font-display text-foreground text-5xl">600,000 SEK</div>
                 <div className="mt-2 text-foreground/70">Ticket size</div>
+                <div className="mt-6 font-display text-foreground text-5xl">39 Propel angels</div>
                 <div className="mt-6 h-px bg-border" />
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
                   <div>
