@@ -1,11 +1,13 @@
 const COMPANIES = [
-  "Beleco","Wehype","All Ears","Vyer Technologies","Waybler","Challengize","DP Organizer","Fairlo",
-  "Float","Klimato","Mindmore","Imagi","Mendi","Foodla","Winteria","Pushappy","Learnster","Ugglo",
-  "Relox Robotics","Pliance","Care to Translate","Defentry","Airmee","Zivi","Din Psykolog","Lylli",
-  "Hypertype","All Aboard","Biorestore","EdAider","Dropmed","Boni Design","Sunt","Parsd","Revelate",
-  "Hydroyal","Akira Science","Kura","Celluxtreme","Fictive Reality","Simulair","Brainzell","Utilizer",
+  "Sellpy","Reorbit","Airmee","All Ears","Waybler","Brainzell","Qasa","Sudio","Karma","Biorestore",
+  "Care to Translate","Mindmore","Zivi",
+  "Beleco","Wehype","Vyer Technologies","Challengize","DP Organizer","Fairlo",
+  "Float","Klimato","Imagi","Mendi","Foodla","Winteria","Pushappy","Learnster","Ugglo",
+  "Relox Robotics","Pliance","Defentry","Din Psykolog","Lylli",
+  "Hypertype","All Aboard","EdAider","Dropmed","Boni Design","Sunt","Parsd","Revelate",
+  "Hydroyal","Akira Science","Kura","Celluxtreme","Fictive Reality","Simulair","Utilizer",
   "PryvX","Hyggligt","Magnephy","Intellaif","Bright Materia","Occurence","Freya","Brave Onion",
-  "ReBake","Seaqure Labs","Arkus AI","Sellpy","Karma","Sudio","Qasa","Reorbit",
+  "ReBake","Seaqure Labs","Arkus AI",
 ];
 
 const LogoChip = ({ name }: { name: string }) => (
