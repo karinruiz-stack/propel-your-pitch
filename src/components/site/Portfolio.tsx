@@ -1,15 +1,10 @@
 const COMPANIES = [
-  "Airmee","Dreams","Enerpoly","Fairlo","Midsummer","BrainZell","Flox","Avanoro","Coverly","Empley",
-  "Freya","Noctie","Olea","Peekerton","PryvX","Recapt","Revelate","Subscribly","SUNT","PaidTabs",
-  "Buility","Mindforest","Watty","Tibber","Mentimeter","Bokio","Lendo","Karma","Anyfin","Detectify",
-  "Mathem","Tictail","Trustly","Klarna","iZettle","Truecaller","Spotify","Northvolt","Voi","Einride",
-  "Volta Greentech","Stilla","Polarium","Heart Aerospace","Kahoot","Acast","Epidemic Sound","Storytel",
-  "Budbee","Instabox","Ageras","Ynvisible","Greenely","Modvion","Volumental","Gleechi","Univrses",
-  "Imagimob","Watershed","Flasheye","Sensative","Soundtrap","Grok","Glooko","Lifesum","Joint Academy",
-  "Doctrin","Min Doktor","Werlabs","Coala Life","Aifloo","Furhat Robotics","Embark Studios","Fishbrain",
-  "Mojang","Resolution Games","Goodbye Kansas","Tobii","Voister","Yepstr","Tink","Toca Boca",
-  "Universal Avenue","Babyshop","Footway","Lensway","Mathem","Refunder","Rebtel","Hövding","Tre",
-  "Funnel","Mynewsdesk","Cervera","Apotea","Boozt","Pricerunner","Avanza","Hemnet","Wint","Mentimeter"
+  "Beleco","Wehype","All Ears","Vyer Technologies","Waybler","Challengize","DP Organizer","Fairlo",
+  "Float","Klimato","Mindmore","Imagi","Mendi","Foodla","Winteria","Pushappy","Learnster","Ugglo",
+  "Relox Robotics","Pliance","Care to Translate","Defentry","Airmee","Zivi","Din Psykolog","Lylli",
+  "Hypertype","All Aboard","Biorestore","EdAider","Dropmed","Boni Design","Sunt","Parsd","Revelate",
+  "Hydroyal","Akira Science","Kura","Celluxtreme","Fictive Reality","Simulair","Brainzell","Utilizer",
+  "PryvX","Hyggligt","Magnephy","Intellaif","Bright Materia","Occurence","Freya","Brave Onion",
 ];
 
 const LogoChip = ({ name }: { name: string }) => (
@@ -37,7 +32,7 @@ export const Portfolio = () => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          {COMPANIES.slice(0, 48).map((c) => (
+          {COMPANIES.map((c) => (
             <LogoChip key={c} name={c} />
           ))}
         </div>
