@@ -28,7 +28,7 @@ export const Portfolio = () => {
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-primary mb-4">Portfolio</div>
             <h2 className="font-display text-4xl md:text-6xl leading-[1] text-foreground max-w-2xl text-balance">
-              210+ startups. One mission: build what matters.
+              230+ startups. One mission: build what matters.
             </h2>
           </div>
           <p className="text-foreground/70 max-w-md">
