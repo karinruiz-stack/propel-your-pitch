@@ -1,6 +1,6 @@
 const STEPS = [
   { n: "01", t: "Send your deck", d: "Upload your pitch deck through our short form. We read every submission. Be bold and concise — we love a strong narrative and a clear wedge." },
-  { n: "02", t: "First screening", d: "Our investment team screens your company within 2 weeks. We focus on the founders, the problem, the timing and the size of the opportunity." },
+  { n: "02", t: "First screening", d: "Our investment team and selected angels screen your company within 2 weeks. We focus on the founders, the problem, the solution, the timing and the size of the opportunity." },
   { n: "03", t: "Founder meeting", d: "If there&apos;s a fit, we book a 45-minute call. This is your chance to bring the deck to life — and our chance to get to know you." },
   { n: "04", t: "Deep dive", d: "We do reference calls, dig into the market, and validate your tech and traction together with relevant angels from our network." },
   { n: "05", t: "Investment committee", d: "Your case is presented to the Propel investment committee. We give you a clear yes or no within days — never a maybe." },
