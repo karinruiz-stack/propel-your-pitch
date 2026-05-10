@@ -9,7 +9,7 @@ export const Footer = () => {
           <span>© {new Date().getFullYear()}</span>
         </div>
         <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-xs text-foreground/60 hover:text-foreground transition-colors">
-          <span>An initiative by</span>
+          <span>Powered by</span>
           <img src={stingLime} alt="Sting" className="h-4 w-auto" />
         </a>
       </div>
