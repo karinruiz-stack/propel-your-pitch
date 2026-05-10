@@ -42,7 +42,7 @@ export const Portfolio = () => {
 
         <div className="mt-10 text-center">
           <a href="https://www.sting.co/companies" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:underline">
-            Explore the full portfolio →
+            Explore the full Sting portfolio →
           </a>
         </div>
       </div>
