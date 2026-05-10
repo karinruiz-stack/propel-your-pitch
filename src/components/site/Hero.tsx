@@ -43,7 +43,7 @@ export const Hero = () => {
             {[
               { n: "210+", l: "Startups backed" },
               { n: "120+", l: "Active angels" },
-              { n: "57%", l: "Gets follow on investment" },
+              { n: "57%", l: "FOLLOW ON" },
             ].map((s) => (
               <div key={s.l}>
                 <div className="font-display text-3xl md:text-4xl text-primary">{s.n}</div>
