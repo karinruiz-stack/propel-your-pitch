@@ -5,6 +5,7 @@ const COMPANIES = [
   "Hypertype","All Aboard","Biorestore","EdAider","Dropmed","Boni Design","Sunt","Parsd","Revelate",
   "Hydroyal","Akira Science","Kura","Celluxtreme","Fictive Reality","Simulair","Brainzell","Utilizer",
   "PryvX","Hyggligt","Magnephy","Intellaif","Bright Materia","Occurence","Freya","Brave Onion",
+  "ReBake","Seaqure Labs","Arkus AI",
 ];
 
 const LogoChip = ({ name }: { name: string }) => (
