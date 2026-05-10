@@ -24,7 +24,7 @@ export const Portfolio = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="flex flex-col gap-6 mb-16">
           <div className="text-xs uppercase tracking-[0.25em] text-primary">Portfolio</div>
-          <h2 className="font-display text-4xl md:text-6xl leading-[1.15] text-foreground text-balance">
+          <h2 className="font-display text-4xl md:text-6xl leading-[1.4] text-foreground text-balance">
             230+ startups.
             <br />
             <span className="text-primary">One mission:</span> build what matters.
