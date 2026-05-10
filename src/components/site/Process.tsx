@@ -2,7 +2,7 @@ const STEPS = [
   { n: "01", t: "Send your deck", d: "Upload your pitch deck through our short form. We read every submission. Be bold and concise — we love a strong narrative and a clear wedge." },
   { n: "02", t: "First screening", d: "Our investment team and selected angels screen your company within 2 weeks. We focus on the founders, the problem, the solution, the timing and the size of the opportunity." },
   { n: "03", t: "Founder meeting", d: "If there&apos;s a fit, we book a 30-minute online meeting. This is your chance to bring the deck to life — and our chance to get to know you. We record your pitch and Q&A to share with our IC and angels." },
-  { n: "04", t: "Deep dive", d: "We dig into the market, do reference calls, and validate your tech and traction together with relevant angels from our network. If still on, we meet for a deep dive and finally make a team assessment." },
+  { n: "04", t: "Deep dive", d: "We dig into the problem and market, do reference calls, and validate your tech and traction together with relevant angels from our network. If still on, we meet for a deep dive and make a team assessment." },
   { n: "05", t: "Investment committee", d: "Your case is presented to the Propel investment committee. We give you a clear yes or no within days — never a maybe." },
   { n: "06", t: "Term sheet & onboarding", d: "We co-invest with our angels, sign a founder-friendly term sheet, and plug you into the full Sting ecosystem of coaches, partners and follow-on capital." },
 ];
