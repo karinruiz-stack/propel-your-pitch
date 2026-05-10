@@ -57,7 +57,7 @@ export const InfoCards = () => {
              <a href="mailto:propel@sting.co" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors mb-3">
                <Mail className="h-4 w-4" /> propel@sting.co
             </a>
-            <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+            <a href="mailto:propel@sting.co" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
               <FileText className="h-4 w-4" /> Submit pitch deck
             </a>
             <div className="mt-6 pt-6 border-t border-border text-xs text-foreground/60 leading-relaxed">
