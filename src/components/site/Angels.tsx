@@ -1,15 +1,43 @@
-const FIRST_NAMES = ["Anna","Erik","Karin","Johan","Maria","Lars","Sara","Mikael","Linda","Anders","Petra","Magnus","Emma","Niklas","Sofia","Patrik","Helena","Fredrik","Camilla","Henrik","Lina","Daniel","Therese","Joakim","Cecilia","Andreas","Charlotta","Martin","Annika","Robert","Ida","Tobias","Malin","Christian","Sanna","Oskar","Jenny","David","Ulrika","Jonas","Caroline","Stefan","Julia","Filip","Frida","Marcus","Elin","Viktor","Hanna","Jesper"];
-const LAST_NAMES = ["Andersson","Bergström","Carlsson","Dahl","Ek","Fors","Gustafsson","Hansen","Isaksson","Johansson","Karlsson","Lindberg","Magnusson","Nilsson","Olsson","Pettersson","Qvist","Rydberg","Sjögren","Törnqvist","Ulander","Viklund","Wahlberg","Yngvesson","Zetterberg","Åberg","Ödman","Holm","Sandberg","Lundgren","Forsberg","Engström","Norberg","Wikström","Hedlund","Söderberg","Lindström","Bergman","Holmberg","Ahlberg"];
-const ROLES = ["Angel investor","Serial founder","Ex-CTO Spotify","Operator","Ex-CFO Klarna","Investor","Tech veteran","Ex-CMO","Founder & angel","Strategist","Ex-VP Eng","Board member","Climate investor","Deeptech angel","Fintech operator","SaaS founder","Healthtech angel","Marketplace expert","Growth lead","Ex-Northvolt"];
+const ROLES = ["Angel investor","Serial founder","Operator","Investor","Tech veteran","Founder & angel","Strategist","Board member","Climate investor","Deeptech angel","Fintech operator","SaaS founder","Healthtech angel","Marketplace expert","Growth lead"];
 
-function seeded(i: number) {
-  const f = FIRST_NAMES[i % FIRST_NAMES.length];
-  const l = LAST_NAMES[(i * 7) % LAST_NAMES.length];
-  const r = ROLES[(i * 3) % ROLES.length];
-  return { name: `${f} ${l}`, initials: `${f[0]}${l[0]}`, role: r };
+const MEN = [
+  "Christian Said","Erik Markman","Fredrik Cardelius","Jan-Eric Ramberg","Joao Champalimaud",
+  "Johan Björksten","Jonas Deibbe","Jonas Nodler","Krister Sundling","Lars Appelstål",
+  "Lars Gullikson","Magnus Sandberg","Maths Olsson","Niclas Lilja","Siam Choudhury",
+  "Simon Josefsson","Tommy Forsell","Pär Uhlin","Robert Lagerström","Mathias Wilkne",
+  "Marcus Hedlund","Ludvig Linge","Lars Lindgren","Richard Tejme","Mattias Weinhandl",
+  "Martin Gren","Håkan Roos","Giovanni Fili","Erik Byrenius","Daniel Pilotti",
+];
+
+const WOMEN = [
+  "Erika Åslund","Frida Schein","Ira Blinkovskaja","Louise Richnau","Louise Sander",
+  "Sofia Chedivili","Susanne Elias","Alexandra Tsampikakis","Johana Landström","Magdalena Gerger",
+  "Eva Reman","Anna Ljungbergh","Boel Rydenå Swartling","Louise Brandt","Shori Zand",
+  "Charlotte Mattfolk","Christina Arnell","Ingrid Salén",
+];
+
+function interleave(men: string[], women: string[]) {
+  const ratio = men.length / women.length;
+  const result: string[] = [];
+  let mi = 0, wi = 0;
+  while (mi < men.length || wi < women.length) {
+    const target = wi * ratio;
+    if (mi < men.length && (mi <= target || wi >= women.length)) {
+      result.push(men[mi++]);
+    } else if (wi < women.length) {
+      result.push(women[wi++]);
+    }
+  }
+  return result;
 }
 
-const ANGELS = Array.from({ length: 28 }, (_, i) => seeded(i));
+const NAMES = interleave(MEN, WOMEN);
+
+const ANGELS = NAMES.map((name, i) => {
+  const parts = name.split(" ");
+  const initials = `${parts[0][0]}${parts[parts.length - 1][0]}`;
+  return { name, initials, role: ROLES[(i * 3) % ROLES.length] };
+});
 
 const AngelCard = ({ a }: { a: { name: string; initials: string; role: string } }) => (
   <div className="shrink-0 w-72 rounded-2xl border border-border bg-card/60 backdrop-blur p-6 mr-4">
