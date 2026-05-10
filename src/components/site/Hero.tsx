@@ -41,7 +41,7 @@ export const Hero = () => {
 
           <div className="mt-14 grid grid-cols-3 gap-6 max-w-lg">
             {[
-              { n: "210+", l: "Startups backed" },
+              { n: "230+", l: "Startups backed" },
               { n: "120+", l: "Active angels" },
               { n: "57%", l: "FOLLOW ON" },
             ].map((s) => (
