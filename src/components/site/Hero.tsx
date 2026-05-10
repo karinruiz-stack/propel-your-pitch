@@ -58,7 +58,7 @@ export const Hero = () => {
             <div className="absolute inset-0 rounded-full bg-primary/15 blur-3xl" />
             <div className="relative h-full w-full rounded-3xl border border-border bg-card/60 backdrop-blur-md p-8 shadow-card flex flex-col justify-between">
               <div className="flex items-center justify-between">
-                <span className="uppercase tracking-[0.2em] text-foreground/60 text-2xl font-semibold">Propel Capital VII</span>
+                <span className="uppercase tracking-[0.2em] text-foreground/60 font-semibold text-lg">Propel Capital VII</span>
                 <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
               </div>
               <div>
