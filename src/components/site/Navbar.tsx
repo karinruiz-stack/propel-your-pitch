@@ -10,9 +10,9 @@ export const Navbar = () => {
           <a href="#top" className="shrink-0">
             <img src={propelLogo} alt="Propel Capital" className="h-10 sm:h-14 md:h-20 w-auto" />
           </a>
-          <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-1.5 pb-1 text-xs text-foreground/60 hover:text-foreground transition-colors">
+          <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-1.5 pb-1 text-sm text-foreground/60 hover:text-foreground transition-colors">
             <span>Powered by</span>
-            <img src={stingLime} alt="Sting" className="h-3 w-auto" />
+            <img src={stingLime} alt="Sting" className="h-4 w-auto" />
           </a>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm text-foreground/80">
