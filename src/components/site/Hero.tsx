@@ -54,15 +54,15 @@ export const Hero = () => {
         </div>
 
         <div className="lg:col-span-5 relative">
-          <div className="relative aspect-square max-w-md mx-auto">
+          <div className="relative max-w-md mx-auto lg:aspect-square">
             <div className="absolute inset-0 rounded-full bg-primary/15 blur-3xl" />
-            <div className="relative h-full w-full rounded-3xl border border-border bg-card/60 backdrop-blur-md p-8 shadow-card flex flex-col justify-between">
-              <div className="flex items-center justify-between">
-                <span className="uppercase tracking-[0.2em] text-foreground/60 font-semibold text-lg">Propel Capital VII</span>
-                <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+            <div className="relative h-full w-full rounded-3xl border border-border bg-card/60 backdrop-blur-md p-6 sm:p-8 shadow-card flex flex-col justify-between gap-6">
+              <div className="flex items-center justify-between gap-3">
+                <span className="uppercase tracking-[0.2em] text-foreground/60 font-semibold text-sm sm:text-base lg:text-lg">Propel Capital VII</span>
+                <span className="h-2 w-2 shrink-0 rounded-full bg-primary animate-pulse" />
               </div>
               <div>
-                <div className="font-display text-foreground text-5xl">600,000 SEK</div>
+                <div className="font-display text-foreground text-3xl sm:text-4xl lg:text-5xl break-words">600,000 SEK</div>
                 <div className="mt-2 text-foreground/70">Ticket size</div>
                 <div className="mt-6 h-px bg-border" />
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
