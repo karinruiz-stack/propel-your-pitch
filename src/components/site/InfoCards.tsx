@@ -72,7 +72,7 @@ export const InfoCards = () => {
             <h3 className="font-display text-2xl text-foreground mb-4">Stay in the loop.</h3>
             <p className="text-sm text-foreground/70 mb-6">News, portfolio updates and the occasional founder story.</p>
             <div className="flex flex-wrap gap-3">
-              <a href="https://www.linkedin.com/company/sting-stockholm/" target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-2 text-sm text-foreground hover:border-primary hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/company/stingsthlm/" target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-2 text-sm text-foreground hover:border-primary hover:text-primary transition-colors">
                 <Linkedin className="h-4 w-4" /> LinkedIn
               </a>
               <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-2 text-sm text-foreground hover:border-primary hover:text-primary transition-colors">
