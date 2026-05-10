@@ -13,7 +13,7 @@ const FAQS = [
   { q: "How does Propel Capital work?", a: "Propel Capital is a rolling pre-seed fund. We invest 600 kSEK per company — 400 kSEK upfront as a convertible and 200 kSEK as equity in the next round — and introduce you to our Propel Capital angel network for follow-on capital, advice and connections. Each fund vintage (we&apos;re currently on Propel Capital VII) backs a new cohort of founders alongside our angels." },
   { q: "What sectors do you focus on?", a: "Tech-driven solutions across climate, energy, health, industrials, security, and more, powered by frontier technologies such as AI, next-gen compute, biotech and advanced materials. If your idea has the potential to reshape the future and scale globally from Sweden, we want to hear from you." },
   { q: "Can international founders apply?", a: "We invest in companies registered in Sweden. If you&apos;re relocating your HQ, let&apos;s talk." },
-  { q: "How can I join Propel Capital and become a Propel angel?", a: "Propel angels are experienced founders, operators and executives from the Nordic tech ecosystem who want to back the next generation of ambitious startups — and stay close to the action at Sting. As a Propel angel you commit capital to the fund, get access to all investment opportunities, and can choose to follow on directly into companies you find particularly exciting. You also join a tight-knit community of 120+ peers who actively share deal flow, expertise and networks. If you&apos;re interested in joining the next generation of Propel Capital, reach out to us at hello@sting.co and we&apos;ll take it from there." },
+  { q: "How can I join Propel Capital and become a Propel angel?", a: "Propel angels are experienced founders, operators and executives from the Nordic tech ecosystem who want to back the next generation of ambitious startups — and stay close to the action at Sting. As a Propel angel you commit capital to the fund, get access to all investment opportunities, and can choose to follow on directly into companies you find particularly exciting. You also join a tight-knit community of 120+ peers who actively share deal flow, expertise and networks. If you&apos;re interested in joining the next generation of Propel Capital, reach out to us at propelcapital@sting.co and we&apos;ll take it from there." },
 ];
 
 const FaqItem = ({ q, a }: { q: string; a: string }) => {
@@ -53,8 +53,8 @@ export const InfoCards = () => {
             <div className="text-xs uppercase tracking-[0.25em] text-primary mb-4">Contact</div>
             <h3 className="font-display text-2xl text-foreground mb-4">Let&apos;s talk.</h3>
             <p className="text-sm text-foreground/70 mb-6">Have a deck or just an idea? Send it over and we&apos;ll get back to you within two weeks.</p>
-            <a href="mailto:hello@sting.co" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors mb-3">
-              <Mail className="h-4 w-4" /> hello@sting.co
+            <a href="mailto:propelcapital@sting.co" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors mb-3">
+              <Mail className="h-4 w-4" /> propelcapital@sting.co
             </a>
             <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
               <FileText className="h-4 w-4" /> Submit pitch deck
