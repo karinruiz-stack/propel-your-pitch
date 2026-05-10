@@ -24,13 +24,13 @@ export const Portfolio = () => {
   return (
     <section id="portfolio" className="relative py-24 md:py-32 border-t border-border">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-          <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-primary mb-4">Portfolio</div>
-            <h2 className="font-display text-4xl md:text-6xl leading-[1] text-foreground max-w-2xl text-balance">
-              230+ startups. One mission: build what matters.
-            </h2>
-          </div>
+        <div className="flex flex-col gap-6 mb-16">
+          <div className="text-xs uppercase tracking-[0.25em] text-primary">Portfolio</div>
+          <h2 className="font-display text-4xl md:text-6xl leading-[1] text-foreground text-balance">
+            230+ startups.
+            <br />
+            One mission: build what matters.
+          </h2>
           <p className="text-foreground/70 max-w-xl">
             From climate, health and deeptech to fintech, AI and space — a glimpse of the founders we&apos;ve been first to back.
           </p>
