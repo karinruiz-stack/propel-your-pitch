@@ -29,7 +29,7 @@ export const Portfolio = () => {
             <br />
             <span className="text-primary">One mission:</span> build what matters.
           </h2>
-          <p className="text-foreground/70 max-w-xl">
+          <p className="text-foreground/70 max-w-xl text-lg">
             From climate, health and deeptech to fintech, AI and space — a glimpse of the founders we&apos;ve been first to back.
           </p>
         </div>
