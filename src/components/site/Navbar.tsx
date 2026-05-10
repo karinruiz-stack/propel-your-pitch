@@ -6,11 +6,11 @@ export const Navbar = () => {
   return (
     <header className="absolute top-0 inset-x-0 z-30">
       <nav className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex items-center justify-between">
-        <div className="flex items-end gap-3">
-          <a href="#top">
-            <img src={propelLogo} alt="Propel Capital" className="h-16 md:h-20 w-auto" />
+        <div className="flex items-end gap-3 min-w-0">
+          <a href="#top" className="shrink-0">
+            <img src={propelLogo} alt="Propel Capital" className="h-10 sm:h-14 md:h-20 w-auto" />
           </a>
-          <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 pb-1 text-xs text-foreground/60 hover:text-foreground transition-colors">
+          <a href="https://www.sting.co" target="_blank" rel="noreferrer" className="hidden sm:flex items-center gap-1.5 pb-1 text-xs text-foreground/60 hover:text-foreground transition-colors">
             <span>Powered by</span>
             <img src={stingLime} alt="Sting" className="h-3 w-auto" />
           </a>
