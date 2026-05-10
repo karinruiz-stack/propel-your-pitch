@@ -64,7 +64,6 @@ export const Hero = () => {
               <div>
                 <div className="font-display text-foreground text-5xl">600,000 SEK</div>
                 <div className="mt-2 text-foreground/70">Ticket size</div>
-                <div className="mt-6 font-display text-foreground text-5xl">39 Propel angels</div>
                 <div className="mt-6 h-px bg-border" />
                 <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
                   <div>
@@ -82,6 +81,14 @@ export const Hero = () => {
                   <div>
                     <div className="text-foreground/60">Sectors</div>
                     <div className="text-foreground font-medium mt-1">Climate, Health, AI, Deeptech</div>
+                  </div>
+                  <div>
+                    <div className="text-foreground/60">Number of Propel Angels</div>
+                    <div className="text-foreground font-medium mt-1">39</div>
+                  </div>
+                  <div>
+                    <div className="text-foreground/60">Year launched</div>
+                    <div className="text-foreground font-medium mt-1">2025</div>
                   </div>
                 </div>
               </div>
