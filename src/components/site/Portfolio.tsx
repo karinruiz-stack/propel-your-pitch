@@ -1,5 +1,5 @@
 const COMPANIES = [
-  "Sellpy","Reorbit","Airmee","All Ears","Waybler","Brainzell","Qasa","Sudio","Karma","Biorestore",
+  "Beatly","Sellpy","Reorbit","Airmee","All Ears","Waybler","Brainzell","Qasa","Sudio","Karma","Biorestore",
   "Care to Translate","Mindmore","Zivi",
   "Beleco","Wehype","Vyer Technologies","Challengize","DP Organizer","Fairlo",
   "Float","Klimato","Imagi","Mendi","Foodla","Winteria","Pushappy","Learnster","Ugglo",
