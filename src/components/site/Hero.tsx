@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32">
+    <section id="top" className="relative overflow-hidden pt-48 pb-24 md:pt-56 md:pb-32">
       <div className="absolute inset-0 bg-grid opacity-[0.35]" />
       <div className="absolute inset-0 bg-hero" />
       <div className="absolute -top-40 right-0 h-[500px] w-[500px] rounded-full bg-primary/10 blur-3xl" />
