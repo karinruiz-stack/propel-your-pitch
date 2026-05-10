@@ -1,5 +1,3 @@
-const ROLES = ["Angel investor","Serial founder","Operator","Investor","Tech veteran","Founder & angel","Strategist","Board member","Climate investor","Deeptech angel","Fintech operator","SaaS founder","Healthtech angel","Marketplace expert","Growth lead"];
-
 const MEN = [
   "Christian Said","Erik Markman","Fredrik Cardelius","Jan-Eric Ramberg","Joao Champalimaud",
   "Johan Björksten","Jonas Deibbe","Jonas Nodler","Krister Sundling","Lars Appelstål",
@@ -33,10 +31,10 @@ function interleave(men: string[], women: string[]) {
 
 const NAMES = interleave(MEN, WOMEN);
 
-const ANGELS = NAMES.map((name, i) => {
+const ANGELS = NAMES.map((name) => {
   const parts = name.split(" ");
   const initials = `${parts[0][0]}${parts[parts.length - 1][0]}`;
-  return { name, initials, role: ROLES[(i * 3) % ROLES.length] };
+  return { name, initials };
 });
 
 const AngelCard = ({ a }: { a: { name: string; initials: string; role: string } }) => (
