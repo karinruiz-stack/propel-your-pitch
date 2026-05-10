@@ -31,7 +31,7 @@ export const Portfolio = () => {
               230+ startups. One mission: build what matters.
             </h2>
           </div>
-          <p className="text-foreground/70 max-w-md">
+          <p className="text-foreground/70 max-w-xl">
             From climate, health and deeptech to fintech, AI and space — a glimpse of the founders we&apos;ve been first to back.
           </p>
         </div>
