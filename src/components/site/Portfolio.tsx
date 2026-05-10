@@ -1,5 +1,4 @@
 const COMPANIES = [
-const COMPANIES = [
   "Beleco","Wehype","All Ears","Vyer Technologies","Waybler","Challengize","DP Organizer","Fairlo",
   "Float","Klimato","Mindmore","Imagi","Mendi","Foodla","Winteria","Pushappy","Learnster","Ugglo",
   "Relox Robotics","Pliance","Care to Translate","Defentry","Airmee","Zivi","Din Psykolog","Lylli",
