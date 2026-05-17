@@ -1,10 +1,10 @@
 const COMPANIES = [
   "Sellpy","Reorbit","Airmee","All Ears","Waybler","Brainzell","Qasa","Sudio","Karma","Biorestore",
-  "Care to Translate","Mindmore","Zivi",
+  "Care to Translate","Zivi",
   "Beleco","Wehype","Vyer Technologies","DP Organizer","Fairlo",
   "Float","Klimato","imagi","Mendi","Winteria","Pushappy","Learnster",
   "Relox Robotics","Pliance","Defentry","Din Psykolog","Lylli",
-  "Hypertype","Parsd","Revelate",
+  "Hypertype","Parsd",
   "Hydroyal","Akira Science","Kura","Celluxtreme","Simulair","Utilizer",
   "PryvX","Hyggligt","Magnephy","Intellaif","Bright Materia","Occurence","Freya","Brave Onion",
   "ReBake","Seaqure Labs","Arkus AI",
