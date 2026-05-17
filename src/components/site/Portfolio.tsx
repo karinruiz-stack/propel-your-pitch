@@ -1,13 +1,13 @@
 const COMPANIES = [
   "Sellpy","Reorbit","Airmee","All Ears","Waybler","Brainzell","Qasa","Sudio","Karma","Biorestore",
   "Care to Translate","Mindmore","Zivi",
-  "Beleco","Wehype","Vyer Technologies","Challengize","DP Organizer","Fairlo",
-   "Float","Klimato","imagi","Mendi","Foodla","Winteria","Pushappy","Learnster","Ugglo",
+  "Beleco","Wehype","Vyer Technologies","DP Organizer","Fairlo",
+  "Float","Klimato","imagi","Mendi","Winteria","Pushappy","Learnster",
   "Relox Robotics","Pliance","Defentry","Din Psykolog","Lylli",
-  "Hypertype","All Aboard","EdAider","Dropmed","Boni Design","Sunt","Parsd","Revelate",
-  "Hydroyal","Akira Science","Kura","Celluxtreme","Fictive Reality","Simulair","Utilizer",
+  "Hypertype","Parsd","Revelate",
+  "Hydroyal","Akira Science","Kura","Celluxtreme","Simulair","Utilizer",
   "PryvX","Hyggligt","Magnephy","Intellaif","Bright Materia","Occurence","Freya","Brave Onion",
-  "ReBake","Seaqure Labs","Arkus AI","Beatly",
+  "ReBake","Seaqure Labs","Arkus AI",
 ];
 
 const LogoChip = ({ name }: { name: string }) => (
