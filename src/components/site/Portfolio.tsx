@@ -6,7 +6,7 @@ const COMPANIES = [
   "Relox Robotics","Pliance","Defentry","Din Psykolog","Lylli",
   "Hypertype","Parsd",
   "Hydroyal","Akira Science","Kura","Celluxtreme","Simulair","Utilizer",
-  "PryvX","Hyggligt","Magnephy","Intellaif","Bright Materia","Occurence","Freya","Brave Onion",
+  "PryvX","Hyggligt","Magnephy","Intellaif","Bright Materia","Occurrence","Freya","Brave Onion",
   "ReBake","Seaqure Labs","Arkus AI",
 ];
 
