@@ -23,7 +23,7 @@ export const Navbar = () => {
         </div>
         <div className="flex items-center gap-4">
           <Button asChild variant="hero" size="sm">
-            <a href="mailto:propel@sting.co">Send pitch deck</a>
+            <a href="https://50drh.share.hsforms.com/2ZN6CFSobRQawqWejNIN2pw" target="_blank" rel="noreferrer">Send pitch deck</a>
           </Button>
         </div>
       </nav>
