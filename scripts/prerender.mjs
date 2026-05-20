@@ -19,7 +19,7 @@ for (const url of routes) {
   const appHtml = render(url);
   const html = template.replace(
     '<div id="root"></div>',
-    `<div id="root">${appHtml}</div>`,
+    `<div id="root" data-prerendered="true">${appHtml}</div>`,
   );
   const outPath =
     url === "/" ? indexFile : resolve(distDir, url.replace(/^\//, ""), "index.html");
