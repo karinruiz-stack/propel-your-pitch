@@ -28,9 +28,10 @@ const FaqItem = ({ q, a }: { q: string; a: string }) => {
         <span className="font-medium text-foreground group-hover:text-primary transition-colors">{q}</span>
         <ChevronDown className={`h-4 w-4 text-foreground/60 transition-transform ${open ? "rotate-180" : ""}`} />
       </div>
-      {open && (
-        <p className="mt-3 text-sm text-foreground/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: a }} />
-      )}
+      <p
+        className={`mt-3 text-sm text-foreground/70 leading-relaxed ${open ? "" : "hidden"}`}
+        dangerouslySetInnerHTML={{ __html: a }}
+      />
     </button>
   );
 };
