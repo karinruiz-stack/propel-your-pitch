@@ -10,7 +10,7 @@ const tree = (
   </BrowserRouter>
 );
 
-if (root.hasChildNodes()) {
+if (root.dataset.prerendered === "true") {
   hydrateRoot(root, tree);
 } else {
   createRoot(root).render(tree);
