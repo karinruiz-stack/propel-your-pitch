@@ -3,7 +3,7 @@ const STEPS = [
   { n: "02", t: "First screening", d: "Our investment team and selected angels screen your company within 2 weeks. We focus on the founders, the problem, the solution, the timing and the size of the opportunity." },
   { n: "03", t: "Founder meeting", d: "If there&apos;s a fit, we book a 30-minute online meeting. This is your chance to bring the deck to life — and our chance to get to know you. We record your pitch and Q&A to share with our IC and angels." },
   { n: "04", t: "Deep dive", d: "We dig into the problem and market, do reference calls, and validate your tech and traction together with relevant angels from our network. If still on, we meet for a deep dive and make a team assessment." },
-  { n: "05", t: "Decision", d: "Your case is presented to the Propel investment committee. We give you a clear yes or no within days — never a maybe." },
+  { n: "05", t: "Decision", d: "An admission and investment decision is made. We give you a clear yes or no within days — never a maybe." },
   { n: "06", t: "Agreements & onboarding", d: "We sign Propel Capital and Sting Core agreements, and you have the cash in your account within 2 weeks. We plug you into the full Sting ecosystem of coaches, partners and follow-on capital." },
 ];
 
