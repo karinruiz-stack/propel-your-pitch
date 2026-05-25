@@ -25,7 +25,7 @@ const BOTTOM_ROW = [
   "Banking/IT investor, 20+ yrs",
   "Professor KTH, Google Cloud Security",
   "Sr Director Enterprise New Relic",
-  "Ex-Scania senior tech",
+  "Ex Scania senior tech",
   "Steel-industry founder",
   "PhD epidemiology",
   "Founder, scaled software 0→€80M",
