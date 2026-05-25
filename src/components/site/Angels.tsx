@@ -22,7 +22,7 @@ const BOTTOM_ROW = [
   "PM Google Cloud Security",
   "Serial founder, ex-Microsoft",
   "Ex-Goldman Sachs / Morgan Stanley",
-  "Banking/IT investor, 20+ yr",
+  "Banking/IT investor, 20+ yrs",
   "Professor KTH, Google Cloud Security",
   "Sr Director Enterprise New Relic",
   "Ex-Scania senior tech",
