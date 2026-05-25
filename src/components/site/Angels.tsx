@@ -1,4 +1,4 @@
-const DESCRIPTIONS = [
+const TOP_ROW = [
   "Google's first European R&D pioneer",
   "Built Pliance. Sold it.",
   "The brain behind Truecaller's growth",
@@ -13,6 +13,9 @@ const DESCRIPTIONS = [
   "Half a career in China. Now impact investor.",
   "Media entrepreneur. Climate tech angel",
   "SaaS, medtech and listed companies",
+];
+
+const BOTTOM_ROW = [
   "Board WWF Sweden",
   "Top-tier real-estate M&A lawyer",
   "Ex-Marketing Director Microsoft Nordic",
@@ -35,7 +38,8 @@ const AngelCard = ({ text }: { text: string }) => (
 );
 
 export const Angels = () => {
-  const row = [...DESCRIPTIONS, ...DESCRIPTIONS];
+  const topRow = [...TOP_ROW, ...TOP_ROW];
+  const bottomRow = [...BOTTOM_ROW, ...BOTTOM_ROW];
   return (
     <section id="angels" className="relative py-24 md:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 mb-16">
@@ -54,10 +58,10 @@ export const Angels = () => {
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
         <div className="flex marquee" style={{ width: "max-content" }}>
-          {row.map((text, i) => <AngelCard key={`a-${i}`} text={text} />)}
+          {topRow.map((text, i) => <AngelCard key={`a-${i}`} text={text} />)}
         </div>
         <div className="flex marquee-slow mt-4" style={{ width: "max-content", transform: "translateX(-100px)" }}>
-          {row.slice().reverse().map((text, i) => <AngelCard key={`b-${i}`} text={text} />)}
+          {bottomRow.slice().reverse().map((text, i) => <AngelCard key={`b-${i}`} text={text} />)}
         </div>
       </div>
     </section>
