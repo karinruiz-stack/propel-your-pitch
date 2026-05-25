@@ -55,8 +55,8 @@ export const InfoCards = () => {
             <div className="text-xs uppercase tracking-[0.25em] text-primary mb-4">Contact</div>
             <h3 className="font-display text-2xl text-foreground mb-4">Let&apos;s talk.</h3>
             <p className="text-sm text-foreground/70 mb-6">Have a deck or just an idea? Send it over and we&apos;ll get back to you within two weeks.</p>
-             <a href="mailto:propel@sting.co" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors mb-3">
-               <Mail className="h-4 w-4" /> propel@sting.co
+             <a href="mailto:emanuel.andersson@sting.co" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors mb-3">
+               <Mail className="h-4 w-4" /> emanuel.andersson@sting.co
             </a>
             <a href="mailto:propel@sting.co" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
               <FileText className="h-4 w-4" /> Submit pitch deck
