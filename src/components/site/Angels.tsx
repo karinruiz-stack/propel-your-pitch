@@ -10,7 +10,7 @@ const TOP_ROW = [
   "Founded PIR. Sold to Cision.",
   "From RSA Labs to serial angel",
   "From McKinsey to startup boards",
-  "Half a career in China. Now impact investor.",
+  "Half a career in China, now impact investor",
   "Media entrepreneur. Climate tech angel",
   "SaaS, medtech and listed companies",
 ];
