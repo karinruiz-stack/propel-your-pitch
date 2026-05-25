@@ -11,7 +11,7 @@ const TOP_ROW = [
   "From RSA Labs to serial angel",
   "From McKinsey to startup boards",
   "Half a career in China, now impact investor",
-  "Media entrepreneur. Climate tech angel",
+  "Media entrepreneur, climate tech angel",
   "SaaS, medtech and listed companies",
 ];
 
