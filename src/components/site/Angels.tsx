@@ -1,6 +1,6 @@
 const TOP_ROW = [
   "Google's first European R&D pioneer",
-  "Built Pliance. Sold it.",
+  "Built Pliance, and sold it",
   "The brain behind Truecaller's growth",
   "Zero to 1,400 employees in healthcare",
   "Four tech giants",
