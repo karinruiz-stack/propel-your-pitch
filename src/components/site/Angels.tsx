@@ -7,7 +7,7 @@ const TOP_ROW = [
   "Built and listed Addnode",
   "Ex Volvo Ventures and Inter IKEA",
   "Serial entrepreneur with three exits",
-  "Founded PIR. Sold to Cision.",
+  "Founded PIR, sold to Cision",
   "From RSA Labs to serial angel",
   "From McKinsey to startup boards",
   "Half a career in China, now impact investor",
