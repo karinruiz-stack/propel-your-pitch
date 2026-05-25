@@ -1,4 +1,4 @@
-const DESCRIPTIONS = [
+const TOP_ROW = [
   "Google's first European R&D pioneer",
   "Built Pliance. Sold it.",
   "The brain behind Truecaller's growth",
@@ -13,6 +13,9 @@ const DESCRIPTIONS = [
   "Half a career in China. Now impact investor.",
   "Media entrepreneur. Climate tech angel",
   "SaaS, medtech and listed companies",
+];
+
+const BOTTOM_ROW = [
   "Board WWF Sweden",
   "Top-tier real-estate M&A lawyer",
   "Ex-Marketing Director Microsoft Nordic",
