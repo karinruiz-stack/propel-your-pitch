@@ -1,55 +1,41 @@
-const MEN = [
-  "Christian Said","Erik Markman","Fredrik Cardelius","Jan-Eric Ramberg","Joao Champalimaud",
-  "Johan Björksten","Jonas Deibbe","Jonas Nodler","Krister Sundling","Lars Appelstål",
-  "Lars Gullikson","Magnus Sandberg","Maths Olsson","Niclas Lilja","Siam Choudhury",
-  "Simon Josefsson","Tommy Forsell","Pär Uhlin","Robert Lagerström","Mathias Wilkne",
-  "Marcus Hedlund","Ludvig Linge","Lars Lindgren","Richard Tejme","Mattias Weinhandl",
-  "Martin Gren","Håkan Roos","Giovanni Fili","Erik Byrenius","Daniel Pilotti",
+const DESCRIPTIONS = [
+  "Google's first European R&D pioneer",
+  "Built Pliance. Sold it.",
+  "The brain behind Truecaller's growth",
+  "Zero to 1,400 employees in healthcare",
+  "Four tech giants",
+  "Built and listed Addnode",
+  "Ex Volvo Ventures and Inter IKEA",
+  "Serial entrepreneur with three exits",
+  "Founded PIR. Sold to Cision.",
+  "From RSA Labs to serial angel",
+  "From McKinsey to startup boards",
+  "Half a career in China. Now impact investor.",
+  "Media entrepreneur. Climate tech angel",
+  "SaaS, medtech and listed companies",
+  "Board WWF Sweden",
+  "Top-tier real-estate M&A lawyer",
+  "Ex-Marketing Director Microsoft Nordic",
+  "PM Google Cloud Security",
+  "Serial founder, ex-Microsoft",
+  "Ex-Goldman Sachs / Morgan Stanley",
+  "Banking/IT investor, 20+ yr",
+  "Professor KTH, Google Cloud Security",
+  "Sr Director Enterprise New Relic",
+  "Ex-Scania senior tech",
+  "Steel-industry founder",
+  "PhD epidemiology",
+  "Founder, scaled software 0→€80M",
 ];
 
-const WOMEN = [
-  "Erika Åslund","Frida Schein","Ira Blinkovskaja","Louise Richnau","Louise Sander",
-  "Sofia Chedivili","Susanne Elias","Alexandra Tsampikakis","Johana Landström","Magdalena Gerger",
-  "Eva Reman","Anna Ljungbergh","Boel Rydenå Swartling","Louise Brandt","Shori Zand",
-  "Charlotte Mattfolk","Christina Arnell","Ingrid Salén",
-];
-
-function interleave(men: string[], women: string[]) {
-  const ratio = men.length / women.length;
-  const result: string[] = [];
-  let mi = 0, wi = 0;
-  while (mi < men.length || wi < women.length) {
-    const target = wi * ratio;
-    if (mi < men.length && (mi <= target || wi >= women.length)) {
-      result.push(men[mi++]);
-    } else if (wi < women.length) {
-      result.push(women[wi++]);
-    }
-  }
-  return result;
-}
-
-const NAMES = interleave(MEN, WOMEN);
-
-const ANGELS = NAMES.map((name) => {
-  const parts = name.split(" ");
-  const initials = `${parts[0][0]}${parts[parts.length - 1][0]}`;
-  return { name, initials };
-});
-
-const AngelCard = ({ a }: { a: { name: string; initials: string } }) => (
-  <div className="shrink-0 w-72 rounded-2xl border border-border bg-card/60 backdrop-blur p-6 mr-4">
-    <div className="flex items-center gap-4">
-      <div className="h-12 w-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center font-display text-primary text-lg">
-        {a.initials}
-      </div>
-      <div className="font-medium text-foreground">{a.name}</div>
-    </div>
+const AngelCard = ({ text }: { text: string }) => (
+  <div className="shrink-0 w-72 rounded-2xl border border-border bg-card/60 backdrop-blur p-6 mr-4 flex items-center">
+    <div className="font-medium text-foreground text-sm leading-relaxed">{text}</div>
   </div>
 );
 
 export const Angels = () => {
-  const row = [...ANGELS, ...ANGELS];
+  const row = [...DESCRIPTIONS, ...DESCRIPTIONS];
   return (
     <section id="angels" className="relative py-24 md:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 mb-16">
@@ -68,10 +54,10 @@ export const Angels = () => {
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
         <div className="flex marquee" style={{ width: "max-content" }}>
-          {row.map((a, i) => <AngelCard key={`a-${i}`} a={a} />)}
+          {row.map((text, i) => <AngelCard key={`a-${i}`} text={text} />)}
         </div>
         <div className="flex marquee-slow mt-4" style={{ width: "max-content", transform: "translateX(-100px)" }}>
-          {row.slice().reverse().map((a, i) => <AngelCard key={`b-${i}`} a={a} />)}
+          {row.slice().reverse().map((text, i) => <AngelCard key={`b-${i}`} text={text} />)}
         </div>
       </div>
     </section>
